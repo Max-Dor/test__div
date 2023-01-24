@@ -1,0 +1,44 @@
+.main__div{
+    display: inline-block;
+    position: relative;
+    visibility: hidden;
+    margin: 30% 50%;
+    transform: translate(-50% ,-50%);
+    width: 340px;
+    height: 460px;
+    background-color:  rgba(70, 130, 180, 0.40);
+}
+.main__div--visible{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+    pointer-events: all;
+}
+.div__cloce{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 16px;
+    left: 16px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.div__line{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transform: rotate(45deg);
+    height: 2px;
+    background-color: #000;
+}
+.div__line::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    transform: rotate(90deg);
+    height: 2px;
+    background-color: #000;
+}
